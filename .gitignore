@@ -91,3 +91,4 @@ secret.js
 **/*.d.ts
 
 !./source
+!./src/controllers
