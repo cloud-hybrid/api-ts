@@ -1,0 +1,30 @@
+{
+    "name": "@cloud-technology/api",
+    "private": false,
+    "version": "0.1.112",
+    "description": "...",
+    "main": "server.js",
+    "type": "module",
+    "scripts": {
+        "start": "node server.js",
+        "package": "npm pack",
+        "setup": "npm install --save-dev",
+        "upload": "npm publish --access public",
+        "listening": "lsof -nP -iTCP -sTCP:LISTEN | grep 3443 | awk '{ print $2 }' | head -1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cloud-hybrid/delta.git",
+        "directory": "packages/api"
+    },
+    "config": {
+        "port": 3443
+    },
+    "dependencies": {
+        "@cloud-technology/library": "./src/library",
+        "@cloud-technology/utilities": "./src/utilities"
+    },
+    "devDependencies": {
+        "@cloud-technology/types": "./@types"
+    }
+}

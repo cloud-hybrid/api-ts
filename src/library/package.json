@@ -1,0 +1,25 @@
+{
+    "name": "@cloud-technology/library",
+    "private": true,
+    "version": "0.0.0",
+    "description": "",
+    "type": "module",
+    "main": "index.js",
+    "dependencies": {
+        "@cloud-technology/logging": "./logging",
+        "axios": "^0.24.0",
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.19.0",
+        "compression": "^1.7.4",
+        "cors": "^2.8.5",
+        "debug": "^4.3.2",
+        "express": "^5.0.0-alpha.8",
+        "jsonwebtoken": "^8.5.1",
+        "mongodb": "^4.1.4",
+        "mongoose": "^6.0.13",
+        "octokit": "^1.7.0",
+        "redis": "^4.0.0",
+        "uuid": "^8.3.2",
+        "ws": "^8.4.0"
+    }
+}
