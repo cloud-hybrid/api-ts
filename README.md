@@ -18,9 +18,9 @@ npm start || node server.js
 
 ## Error Code(s) ##
 
-|    Exit Code    |  Description  |         Signal         |
-|   :---------:   | :-----------: |        :------:        |
-|     **172**     | [Error](#172) |     `ECONNREFUSED`     |
+| Exit Code |  Description  |     Signal     |
+|:---------:|:-------------:|:--------------:|
+|  **172**  | [Error](#172) | `ECONNREFUSED` |
 
 ### Signal & Error Map ###
 

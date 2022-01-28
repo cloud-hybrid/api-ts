@@ -3,11 +3,11 @@
     "private": false,
     "version": "0.1.112",
     "description": "...",
-    "main": "server.js",
     "type": "module",
     "scripts": {
-        "start": "node server.js",
+        "start": "node --es-module-specifier-resolution node .",
         "package": "npm pack",
+        "compile": "tsc --watch",
         "setup": "npm install --save-dev",
         "upload": "npm publish --access public",
         "listening": "lsof -nP -iTCP -sTCP:LISTEN | grep 3443 | awk '{ print $2 }' | head -1"
@@ -21,10 +21,20 @@
         "port": 3443
     },
     "dependencies": {
-        "@cloud-technology/library": "./src/library",
-        "@cloud-technology/utilities": "./src/utilities"
+        "@cloud/environment": "./library/environment",
+        "@cloud/http-statuses": "./library/status-codes",
+        "@cloud/logging": "./library/logging",
+        "@cloud/library": "./library",
+        "@cloud/s3": "./library/s3"
     },
     "devDependencies": {
-        "@cloud-technology/types": "./@types"
+        "@types/compression": "^1.7.2",
+        "@types/uuid": "^8.3.4",
+        "@aws-sdk/types": "^3.47.1",
+        "@types/bcrypt": "^5.0.0",
+        "@types/body-parser": "^1.19.2",
+        "@types/cors": "^2.8.12",
+        "@types/express": "^4.17.13",
+        "@types/node": "^17.0.13"
     }
 }

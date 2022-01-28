@@ -85,3 +85,9 @@ dist
 .eclipse
 
 secret.js
+
+*.js
+**/*.js
+**/*.d.ts
+
+!./source

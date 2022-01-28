@@ -22,8 +22,8 @@
         "declarationMap": false,
         "strictFunctionTypes": true,
         "baseUrl": ".",
-        "outDir": "compilation",
-        "declarationDir": "declarations",
+        // "outDir": "compilation",
+        // "declarationDir": "declarations",
         "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
         "exactOptionalPropertyTypes": true,
@@ -69,11 +69,13 @@
     },
     "exclude": [
         "**/*.d.ts",
-        "unit-testing",
-        "front-end"
+        "src/**/*.js",
+        "source"
     ],
     "include": [
-        "cdktf.json",
-        "**/*.ts"
+        "index.ts",
+        "server.ts",
+        "src/**/*.ts",
+        "library/**/*.ts"
     ]
 }
