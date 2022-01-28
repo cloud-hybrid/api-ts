@@ -1,5 +1,3 @@
-# `@cloud-technology/api` #
-
 - [ ] Establish a Refresh Schema
     - [User Guide & Reference(s)](https://www.bezkoder.com/jwt-refresh-token-node-js-mongodb/)
 
