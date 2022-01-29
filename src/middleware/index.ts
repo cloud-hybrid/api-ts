@@ -1,4 +1,5 @@
 type Server = typeof import("..").Application;
+
 const Middleware = async (server: Server) => {
     console.debug("[Middleware] [Debug] Initializing Middleware ...");
 

@@ -86,7 +86,9 @@ const Parse = (debug = false) => {
                 );
 
                 return JSON.parse(String(target));
-            } catch ( error ) { /// Likely, a Directory or Socket
+            } catch ( error ) {
+                /// Likely, a Directory or Socket
+
                 Process.stderr.write("Target File Descriptor isn't JSON Serializable" + "\n");
             }
         } else {

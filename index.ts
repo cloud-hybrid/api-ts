@@ -2,10 +2,8 @@ import Module from "module";
 
 import { Process } from "@cloud/environment";
 
-const Require = Module.createRequire(import.meta.url);
+const Import = Module.createRequire(import.meta.url);
 
-Reflect.set(Process, "package", Require("./package.json"));
-
-export default await import("./src").then(($) => $.Server());
+Reflect.set(Process, "package", Import("./package.json"));
 
 await import("./src/server");
