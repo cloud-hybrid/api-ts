@@ -1,3 +1,7 @@
+/***
+ * @copyright
+ */
+
 import Module from "module";
 
 import { Process } from "@cloud/environment";
