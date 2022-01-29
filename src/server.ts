@@ -1,4 +1,5 @@
-import { Server } from "./index";
+import { Server } from ".";
+
 import { Middleware } from "./middleware";
 import { Controller } from "./controllers";
 
