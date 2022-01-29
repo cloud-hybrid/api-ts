@@ -1,12 +1,8 @@
-import { Server } from ".";
-
-import { Middleware } from "./middleware";
-import { Controller } from "./controllers";
+import { Server, Middleware, Controller } from ".";
 
 const Application = Server();
 
 await Middleware(Application);
 
-Application.use("/", Controller);
-
-Application.listen(3443, "0.0.0.0");
+Application.use("/", Controller)
+    .listen(3443);
