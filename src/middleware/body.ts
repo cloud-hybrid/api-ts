@@ -1,7 +1,9 @@
 
-import { Parser } from "@cloud/library";
+import { Parser } from "library";
 
-import { Server } from "..";
+import { Application } from "..";
+
+type Server = typeof Application;
 
 const Parsers = {
     "URL-Encoded": {
@@ -19,7 +21,6 @@ const Parsers = {
 };
 
 type Generic = any;
-type Server = typeof Server;
 
 /*** Body Middleware Loader
  *

@@ -13,10 +13,11 @@ const Overwrites = [
     }
 ];
 
-import { Server } from "..";
+import { Application } from "..";
+
+type Server = typeof Application;
 
 type Generic = any;
-type Server = typeof Server;
 
 export const Headers = (server: Server | Generic, headers = Overwrites) => {
     console.debug("[Headers] [Debug] Instantiating Header(s)");

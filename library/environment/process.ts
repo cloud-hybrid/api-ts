@@ -33,3 +33,5 @@ Object.keys( Runtime ).forEach( ($) => {
 } );
 
 export { Process };
+
+export default Process;

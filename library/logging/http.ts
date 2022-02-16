@@ -1,13 +1,12 @@
-/// @ts-ignore-module
+import Default from "pino";
 
 import { v4 as UUID } from "uuid";
 
 import Log from "pino-http";
 
-import { Default } from "./index.js";
-import { IncomingMessage, ServerResponse } from "node:http";
+import { IncomingMessage, ServerResponse } from "http";
 
-//@ts-ignore
+// @ts-ignore
 const Configuration = Log( {
     // @ts-ignore
     logger: Default( { sync: false } ),
@@ -115,6 +114,10 @@ function Handler(server: { use: (arg0: (request: any, res: any, callback: any) =
     server.use( $ );
 }
 
-export { Handler };
+const $ = Default.destination({ sync: false });
 
-export default Handler;
+const Logger = Default($);
+
+export { Handler, Logger };
+
+export default Logger;

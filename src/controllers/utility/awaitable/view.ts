@@ -1,12 +1,16 @@
-import { Router } from "@cloud/library";
+import { Router } from "library";
 
 import { Awaitable } from "./context";
 
 const Parameters = URLSearchParams;
 
+import * as Querystring from "querystring";
+
 const Controller = Router();
 Controller.get("/", async (request, response) => {
-    const $ = JSON.stringify(new Parameters(request.url.replace("?", "").replace("/", "")), null, 4);
+    // const $ = JSON.stringify(new Parameters(request.url.replace("?", "").replace("/", "")), null, 4);
+
+    const $ = JSON.stringify(Querystring.parse(request.url.replace("?", "").replace("/", "")), null, 4);
 
     const Arguments = JSON.parse($);
 

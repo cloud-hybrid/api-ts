@@ -1,8 +1,8 @@
 import OS from "os";
 
 export const E2BIG = OS.constants.errno["E2BIG"];
-export const EACCES = OS.constants.errno["EACCES"];                     // Permission(s) + Elevation Failure
-export const EADDRINUSE = OS.constants.errno["EADDRINUSE"];             // Port Already in Use
+export const EACCES = OS.constants.errno["EACCES"];
+export const EADDRINUSE = OS.constants.errno["EADDRINUSE"];
 export const EADDRNOTAVAIL = OS.constants.errno["EADDRNOTAVAIL"];
 export const EAFNOSUPPORT = OS.constants.errno["EAFNOSUPPORT"];
 export const EAGAIN = OS.constants.errno["EAGAIN"];
@@ -13,13 +13,13 @@ export const EBUSY = OS.constants.errno["EBUSY"];
 export const ECANCELED = OS.constants.errno["ECANCELED"];
 export const ECHILD = OS.constants.errno["ECHILD"];
 export const ECONNABORTED = OS.constants.errno["ECONNABORTED"];
-export const ECONNREFUSED = OS.constants.errno["ECONNREFUSED"];         // Connection Refused Connection
+export const ECONNREFUSED = OS.constants.errno["ECONNREFUSED"];
 export const ECONNRESET = OS.constants.errno["ECONNRESET"];
 export const EDEADLK = OS.constants.errno["EDEADLK"];
 export const EDESTADDRREQ = OS.constants.errno["EDESTADDRREQ"];
 export const EDOM = OS.constants.errno["EDOM"];
 export const EDQUOT = OS.constants.errno["EDQUOT"];
-export const EEXIST = OS.constants.errno["EEXIST"];                     // File Descriptor Not Found
+export const EEXIST = OS.constants.errno["EEXIST"];
 export const EFAULT = OS.constants.errno["EFAULT"];
 export const EFBIG = OS.constants.errno["EFBIG"];
 export const EHOSTUNREACH = OS.constants.errno["EHOSTUNREACH"];
@@ -32,7 +32,7 @@ export const EIO = OS.constants.errno["EIO"];
 export const EISCONN = OS.constants.errno["EISCONN"];
 export const EISDIR = OS.constants.errno["EISDIR"];
 export const ELOOP = OS.constants.errno["ELOOP"];
-export const EMFILE = OS.constants.errno["EMFILE"];                     // Maximum Open System File(s)
+export const EMFILE = OS.constants.errno["EMFILE"];
 export const EMLINK = OS.constants.errno["EMLINK"];
 export const EMSGSIZE = OS.constants.errno["EMSGSIZE"];
 export const EMULTIHOP = OS.constants.errno["EMULTIHOP"];

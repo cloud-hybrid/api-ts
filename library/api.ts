@@ -1,7 +1,7 @@
 import express from "express";
 
 const API = express;
-const Application = API();
+const Application: typeof express.application = API();
 const Router = API.Router;
 
 import compression from "compression";

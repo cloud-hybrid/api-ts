@@ -13,10 +13,11 @@ export const Options = {
     preflightContinue: true
 };
 
-import { Server } from "..";
+import { Application } from "..";
+
+type Server = typeof Application;
 
 type Generic = any;
-type Server = typeof Server;
 
 /*** CORS Middleware Loader
  *

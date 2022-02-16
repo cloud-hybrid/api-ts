@@ -1,7 +1,11 @@
-import Logger from "./src/index.js";
+//import Default from "pino";
+//
+//const $ = Default.destination({ sync: false });
+//
+//const Logger = Default($);
+//
+//export { Logger, Default };
+//
+//export default { Logger, Default };
 
-import { Handler } from "./src/http.js";
-
-export { Logger, Handler };
-
-export default Logger;
+export * from "./http";

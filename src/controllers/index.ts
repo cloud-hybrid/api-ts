@@ -4,7 +4,7 @@
 //import { default as Database } from "./database/index.js";
 //import { default as Authorization } from "./authorization/index.js";
 
-import { Router } from "@cloud/library";
+import { Router } from "library";
 
 import { Utilities } from "./utility";
 
@@ -26,10 +26,10 @@ Controller.get("/", async (_, response) => {
 
 Controller.use("/utility", Utilities);
 
-//Controller.use("/gitlab", GitLab);
-//Controller.use("/github", GitHub);
-//Controller.use("/utility", Utility);
-//Controller.use("/database", Database);
-//Controller.use("/authorization", Authorization);
+// Controller.use("/gitlab", GitLab);
+// Controller.use("/github", GitHub);
+// Controller.use("/utility", Utility);
+// Controller.use("/database", Database);
+// Controller.use("/authorization", Authorization);
 
 export default Controller;

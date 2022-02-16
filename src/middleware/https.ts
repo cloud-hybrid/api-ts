@@ -2,9 +2,9 @@
  *  HTTPs Redirect
  */
 
-import { Server } from "..";
+import { Application } from "..";
 
-type Server = typeof Server;
+type Server = typeof Application;
 const HTTPs = (server: Server | any) => {
     console.debug("[HTTPs] [Debug] Instantiating HTTPs Check");
     const $ = (request: { headers: { host: string; }; url: string; }) => {

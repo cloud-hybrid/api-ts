@@ -1,15 +1,14 @@
 /*** Compression
  * @module Compression
- *
- * @typedef {import("./../index.js").Application} Application
- *
  */
 
-import { Server } from "..";
-import { Compression } from "@cloud/library";
+import { Application } from "..";
+
+type Server = typeof Application;
+
+import { Compression } from "library";
 
 type Generic = any;
-type Server = typeof Server;
 
 /*** Compression Middleware Loader
  *

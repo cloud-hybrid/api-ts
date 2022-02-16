@@ -21,11 +21,7 @@
         "port": 3443
     },
     "dependencies": {
-        "@cloud/environment": "./library/environment",
-        "@cloud/http-statuses": "./library/status-codes",
-        "@cloud/logging": "./library/logging",
-        "@cloud/library": "./library",
-        "@cloud/s3": "./library/s3"
+        "library": "./library"
     },
     "devDependencies": {
         "@types/compression": "^1.7.2",
